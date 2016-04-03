@@ -3,15 +3,28 @@
 #define GEEK_HPP
 
 #include <vector>
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-
-struct radixGeek
+template<typename T>
+struct radixGeeks
 {
+	vector<T> arr;
+	// hold size of vector
+	int n = 0;
+
+	radixGeeks()
+	:arr()
+	{}
+
+	void add(int x)
+	{
+		arr.push_back(x);
+		++n;
+	}
 	// A utility function to get maximum value in arr[]
-	int getMax(int arr[], int n)
+	int getMax()
 	{
 		int mx = arr[0];
 		for (int i = 1; i < n; i++)
@@ -22,7 +35,7 @@ struct radixGeek
 
 	// A function to do counting sort of arr[] according to
 	// the digit represented by exp.
-	void countSort(int arr[], int n, int exp)
+	void countSort(int exp)
 	{
 		int output[n]; // output array
 		int i, count[10] = {0};
@@ -51,23 +64,25 @@ struct radixGeek
 
 	// The main function to that sorts arr[] of size n using 
 	// Radix Sort
-	void radixsort(int arr[], int n)
+	void radixsort()
 	{
+		// get size of arr
+		n = arr.size();
 		// Find the maximum number to know number of digits
-		int m = getMax(arr, n);
+		int m = getMax();
 
 		// Do counting sort for every digit. Note that instead
 		// of passing digit number, exp is passed. exp is 10^i
 		// where i is current digit number
 		for (int exp = 1; m/exp > 0; exp *= 10)
-			countSort(arr, n, exp);
+			countSort(exp);
 	}
 
 	// A utility function to print an array
-	void print(int arr[], int n)
+	void print()
 	{
 		for (int i = 0; i < n; i++)
 			cout << arr[i] << " ";
 	}
-}
+};
 #endif
