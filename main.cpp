@@ -5,7 +5,8 @@
 #include "Complexity_Timer.hpp"
 #include "Complexity_Recorder.hpp"
 #include "geeks.cpp"
-extern "C" { #include "listRadix.c" }
+#include "bubbleSort.cpp"
+// extern "C" { #include "listRadix.c" }
 
 // template<typename T>
 // void addElements(ourRadix<T>& myRadix, int num);
@@ -23,7 +24,15 @@ int main()
 	// command to perform the sort
 	geeks.radixsort();
 	// optionally print the vector
-	geeks.print();
+//	geeks.print();
+	bubbleySort<int> bubbles;
+	for(int i = 10; i < 20; i++)
+		bubbles.add(i);
+	for(int i = 0; i < 20; i++)
+		bubbles.add(i);
+	bubbles.print();
+	bubbles.bubblesort();
+	bubbles.print();
 	return 0;
 }
 
