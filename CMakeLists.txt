@@ -22,7 +22,7 @@ set(CMAKE_CXX_FLAGS "-Wall -std=c++11 ")#${SAN_FLAGS}")
 # Declares the executable to be built from source files
 #
 # TODO: Add your files.
-add_executable(radixsort main.cpp geeks.cpp )
+add_executable(radixsort main.cpp geeks.cpp ourRadix.cpp listRadix.c)
 
 
 # This creates a new target for the make program. After

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gatesyp/GitHub/radixsort/Complexity_Recorder.hpp
+vector
+-
+iostream
+-
+iomanip
+-
+
+/home/gatesyp/GitHub/radixsort/Complexity_Timer.hpp
+vector
+-
+ctime
+-
+
+/home/gatesyp/GitHub/radixsort/geeks.cpp
+geeks.hpp
+/home/gatesyp/GitHub/radixsort/geeks.hpp
+
+/home/gatesyp/GitHub/radixsort/geeks.hpp
+vector
+-
+iostream
+-
+
+/home/gatesyp/GitHub/radixsort/main.cpp
+iostream
+-
+cassert
+-
+Complexity_Timer.hpp
+/home/gatesyp/GitHub/radixsort/Complexity_Timer.hpp
+Complexity_Recorder.hpp
+/home/gatesyp/GitHub/radixsort/Complexity_Recorder.hpp
+geeks.cpp
+/home/gatesyp/GitHub/radixsort/geeks.cpp
+
