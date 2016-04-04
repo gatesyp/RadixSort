@@ -1,2 +1,0 @@
-/home/gatesyp/GitHub/radixsort/build/CMakeFiles/printout.dir
-/home/gatesyp/GitHub/radixsort/build/CMakeFiles/radixsort.dir
