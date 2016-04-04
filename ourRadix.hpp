@@ -6,6 +6,8 @@
 
 using namespace std;
 
+// TODO should we even write one from scratch? ask will if we have to, or if we can just use lots of existing implementations
+
 template<typename T>
 struct ourRadix
 {

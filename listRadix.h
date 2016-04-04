@@ -2,6 +2,10 @@
 #define LISTRADIX_H
 
 /* C program to sort an array using radix sort LINKED LIST implementation*/ 
+// kind of poopy code from a blog
+// can be cleaned up syntax-wise
+// fully functioning standalone code otherwise
+// TODO wrap this in a struct, provide an add function, and give logic in main.cpp to use this struct
 #include <stdio.h> 
 #include <stdlib.h> 
 
@@ -74,7 +78,7 @@ int main()
 	int a[100],n,i,m;
 	char temp;
 	printf("===========================RADIX SORT===========================================n");
-	printf("ENTER NUMBER OF NUMBERS AND NUMBER OF DIGITSn");
+	printf("ENTER NUMBER OF NUMBERS AND MAX NUMBER OF DIGITSn");
 	scanf("%d%d",&n,&m);
 	printf("ENTER ELEMENTSn");
 	for(i=0;

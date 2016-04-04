@@ -6,11 +6,8 @@
 #include "Complexity_Recorder.hpp"
 #include "geeks.cpp"
 #include "bubbleSort.cpp"
-// extern "C" { #include "listRadix.c" }
 
-// template<typename T>
-// void addElements(ourRadix<T>& myRadix, int num);
-
+// extern "C" { #include "listRadix.c" } // line to add a c file as a reference, throws error
 
 int main()
 {
@@ -37,10 +34,3 @@ int main()
 }
 
 
-// void addElements(ourRadix<T>& myRadix, int num)
-// {
-// 	for(int i = 0; i < num; i++)
-// 	{
-// 		ourRadix.add(rdm);
-// 	}	
-// }

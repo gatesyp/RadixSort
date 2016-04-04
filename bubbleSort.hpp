@@ -4,6 +4,9 @@
 #include <iostream>
 #include <vector>
 
+
+// simple struct to perform bubble sort
+// fully functioning
 template<typename T>
 struct bubbleySort{
 	std::vector<T> arr;
