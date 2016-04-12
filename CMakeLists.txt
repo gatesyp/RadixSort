@@ -6,6 +6,13 @@ project(radixsort CXX)
 cmake_minimum_required(VERSION 2.8)
 
 
+# Enable compilation with c++11
+# Turn on all warnings and make them errors.
+# Also enable a set of sanitizers to handle various
+# kinds of undefined behaviors.
+#
+# TODO: Can we check for compiler support?
+#
 # NOTE: If these cause errors when compiling, just
 # comment out the next line.
 #set(SAN_FLAGS "-fsanitize=address -fsanitize=undefined -fsanitize=leak")
@@ -15,7 +22,7 @@ set(CMAKE_CXX_FLAGS "-Wall -std=c++11 ")#${SAN_FLAGS}")
 # Declares the executable to be built from source files
 #
 # TODO: Add your files.
-add_executable(radixsort main.cpp geeks.cpp bubbleSort.cpp emersonMain.cpp)
+add_executable(radix emersonMain.cpp)
 
 
 # This creates a new target for the make program. After

@@ -5,12 +5,11 @@
 
 using namespace std;
 
-void emersonMain() {
+int main() {
 	const int SIZE = 100;
 	int array[SIZE];
 		
 	//Fill up array with random numbers between 0 and 100 to sort. 
-	int temp;
 	for(int i = 0; i < SIZE; i++) {
 		array[i]= rand() %100;
 	}
@@ -20,4 +19,5 @@ void emersonMain() {
 	cout << endl;
 	for(int i = 0; i < SIZE; i++)
 		cout << array[i] << " ";
+	cout << endl;
 }

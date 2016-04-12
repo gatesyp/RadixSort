@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/emerson/github/RadixSort/emersonMain.cpp
+iostream
+-
+stdlib.h
+-
+time.h
+-
+emersonRadix.cpp
+/home/emerson/github/RadixSort/emersonRadix.cpp
+
+/home/emerson/github/RadixSort/emersonRadix.cpp
+emersonRadix.hpp
+/home/emerson/github/RadixSort/emersonRadix.hpp
+
+/home/emerson/github/RadixSort/emersonRadix.hpp
+iostream
+-
+stdlib.h
+-
+time.h
+-
+
