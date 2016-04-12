@@ -6,11 +6,13 @@
 #include "Complexity_Recorder.hpp"
 #include "geeks.cpp"
 #include "bubbleSort.cpp"
+#include "listRadix.hpp"
+#include "emersonMain.cpp"
 
-// extern "C" { #include "listRadix.c" } // line to add a c file as a reference, throws error
-
+void listRadixSort();
 int main()
 {
+	listRadixSort();
 	// create the object
 	radixGeeks<int> geeks;
 	// now perform all test logic
@@ -34,3 +36,20 @@ int main()
 }
 
 
+void listRadixSort()
+{
+	int a[100],n,i,m;
+	char temp;
+	printf("===========================RADIX SORT===========================================\n");
+	printf("ENTER NUMBER OF NUMBERS AND MAX NUMBER OF DIGITS\n");
+	scanf("%d%d",&n,&m);
+	printf("ENTER ELEMENTS\n");
+	for(i=0;
+			i< n;
+			++i) scanf("%d",&a[i]);
+	listsRadix(a,n,m);
+	printf("SORTED LISTn");
+	for(i=0;
+			i< n;
+			++i) printf("%d ",a[i]);
+}

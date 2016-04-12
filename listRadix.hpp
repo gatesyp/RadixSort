@@ -1,15 +1,17 @@
-#ifndef LISTRADIX_H
-#define LISTRADIX_H
+#ifndef LISTRADIX_HPP
+#define LISTRADIX_HPP
 
 /* C program to sort an array using radix sort LINKED LIST implementation*/ 
 // kind of poopy code from a blog
 // can be cleaned up syntax-wise
+// modified to be compileable with CMake tool
 // fully functioning standalone code otherwise
 // TODO wrap this in a struct, provide an add function, and give logic in main.cpp to use this struct
+
 #include <stdio.h> 
 #include <stdlib.h> 
 
-void radix(int a[],int n,int m)
+void listsRadix(int a[],int n,int m)
 {
 	typedef struct node
 	{
@@ -72,26 +74,6 @@ void radix(int a[],int n,int m)
 	for(i=0;
 			i< n;
 			++i,ptr=ptr->next) a[i]=ptr->data;
-}
-int main()
-{
-	int a[100],n,i,m;
-	char temp;
-	printf("===========================RADIX SORT===========================================n");
-	printf("ENTER NUMBER OF NUMBERS AND MAX NUMBER OF DIGITSn");
-	scanf("%d%d",&n,&m);
-	printf("ENTER ELEMENTSn");
-	for(i=0;
-			i< n;
-			++i) scanf("%d",&a[i]);
-	radix(a,n,m);
-	printf("SORTED LISTn");
-	for(i=0;
-			i< n;
-			++i) printf("%d ",a[i]);
-	printf("nDO YOU wish to continue?[y/n]n");
-	scanf("%c",&temp);
-	return 0;
 }
 
 

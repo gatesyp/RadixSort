@@ -1,11 +1,11 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
-#include "theRadix.cpp"
+#include "emersonRadix.cpp"
 
 using namespace std;
 
-int main() {
+void emersonMain() {
 	const int SIZE = 100;
 	int array[SIZE];
 		

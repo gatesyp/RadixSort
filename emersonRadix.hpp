@@ -36,8 +36,8 @@ void countingSort(int array[], int digit) {
 	int size = 100;
 
 	//initalize an array to store the counts of each number in the input array
-	int count[10] = {0};
-	int output[size] = {0};
+	int count[10];
+	int output[size];
 
 	//fill the count array with the number of each element in input array 
 	int temp = 0;
