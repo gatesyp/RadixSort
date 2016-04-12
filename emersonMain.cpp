@@ -15,7 +15,7 @@ int main() {
 	}
 	
 	//Call radix sort function called emersonSort
-	emersonSort(array);
+	emersonSort(array, SIZE);
 	cout << endl;
 	for(int i = 0; i < SIZE; i++)
 		cout << array[i] << " ";
