@@ -136,32 +136,32 @@ radix/fast:
 	$(MAKE) -f CMakeFiles/radix.dir/build.make CMakeFiles/radix.dir/build
 .PHONY : radix/fast
 
-emersonMain.o: emersonMain.cpp.o
+main.o: main.cpp.o
 
-.PHONY : emersonMain.o
+.PHONY : main.o
 
 # target to build an object file
-emersonMain.cpp.o:
-	$(MAKE) -f CMakeFiles/radix.dir/build.make CMakeFiles/radix.dir/emersonMain.cpp.o
-.PHONY : emersonMain.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/radix.dir/build.make CMakeFiles/radix.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-emersonMain.i: emersonMain.cpp.i
+main.i: main.cpp.i
 
-.PHONY : emersonMain.i
+.PHONY : main.i
 
 # target to preprocess a source file
-emersonMain.cpp.i:
-	$(MAKE) -f CMakeFiles/radix.dir/build.make CMakeFiles/radix.dir/emersonMain.cpp.i
-.PHONY : emersonMain.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/radix.dir/build.make CMakeFiles/radix.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-emersonMain.s: emersonMain.cpp.s
+main.s: main.cpp.s
 
-.PHONY : emersonMain.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-emersonMain.cpp.s:
-	$(MAKE) -f CMakeFiles/radix.dir/build.make CMakeFiles/radix.dir/emersonMain.cpp.s
-.PHONY : emersonMain.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/radix.dir/build.make CMakeFiles/radix.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -173,9 +173,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... printout"
 	@echo "... radix"
-	@echo "... emersonMain.o"
-	@echo "... emersonMain.i"
-	@echo "... emersonMain.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

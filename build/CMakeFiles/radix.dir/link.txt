@@ -1,1 +1,1 @@
-/usr/bin/c++   -Wall -std=c++11    CMakeFiles/radix.dir/emersonMain.cpp.o  -o radix -rdynamic 
+/usr/bin/c++   -Wall -std=c++11    CMakeFiles/radix.dir/main.cpp.o  -o radix -rdynamic 

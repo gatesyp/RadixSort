@@ -57,38 +57,38 @@ include CMakeFiles/radix.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/radix.dir/flags.make
 
-CMakeFiles/radix.dir/emersonMain.cpp.o: CMakeFiles/radix.dir/flags.make
-CMakeFiles/radix.dir/emersonMain.cpp.o: ../emersonMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emerson/github/RadixSort/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/radix.dir/emersonMain.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/radix.dir/emersonMain.cpp.o -c /home/emerson/github/RadixSort/emersonMain.cpp
+CMakeFiles/radix.dir/main.cpp.o: CMakeFiles/radix.dir/flags.make
+CMakeFiles/radix.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emerson/github/RadixSort/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/radix.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/radix.dir/main.cpp.o -c /home/emerson/github/RadixSort/main.cpp
 
-CMakeFiles/radix.dir/emersonMain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/radix.dir/emersonMain.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emerson/github/RadixSort/emersonMain.cpp > CMakeFiles/radix.dir/emersonMain.cpp.i
+CMakeFiles/radix.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/radix.dir/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emerson/github/RadixSort/main.cpp > CMakeFiles/radix.dir/main.cpp.i
 
-CMakeFiles/radix.dir/emersonMain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/radix.dir/emersonMain.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emerson/github/RadixSort/emersonMain.cpp -o CMakeFiles/radix.dir/emersonMain.cpp.s
+CMakeFiles/radix.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/radix.dir/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emerson/github/RadixSort/main.cpp -o CMakeFiles/radix.dir/main.cpp.s
 
-CMakeFiles/radix.dir/emersonMain.cpp.o.requires:
+CMakeFiles/radix.dir/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/radix.dir/emersonMain.cpp.o.requires
+.PHONY : CMakeFiles/radix.dir/main.cpp.o.requires
 
-CMakeFiles/radix.dir/emersonMain.cpp.o.provides: CMakeFiles/radix.dir/emersonMain.cpp.o.requires
-	$(MAKE) -f CMakeFiles/radix.dir/build.make CMakeFiles/radix.dir/emersonMain.cpp.o.provides.build
-.PHONY : CMakeFiles/radix.dir/emersonMain.cpp.o.provides
+CMakeFiles/radix.dir/main.cpp.o.provides: CMakeFiles/radix.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/radix.dir/build.make CMakeFiles/radix.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/radix.dir/main.cpp.o.provides
 
-CMakeFiles/radix.dir/emersonMain.cpp.o.provides.build: CMakeFiles/radix.dir/emersonMain.cpp.o
+CMakeFiles/radix.dir/main.cpp.o.provides.build: CMakeFiles/radix.dir/main.cpp.o
 
 
 # Object files for target radix
 radix_OBJECTS = \
-"CMakeFiles/radix.dir/emersonMain.cpp.o"
+"CMakeFiles/radix.dir/main.cpp.o"
 
 # External object files for target radix
 radix_EXTERNAL_OBJECTS =
 
-radix: CMakeFiles/radix.dir/emersonMain.cpp.o
+radix: CMakeFiles/radix.dir/main.cpp.o
 radix: CMakeFiles/radix.dir/build.make
 radix: CMakeFiles/radix.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/emerson/github/RadixSort/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable radix"
@@ -99,7 +99,7 @@ CMakeFiles/radix.dir/build: radix
 
 .PHONY : CMakeFiles/radix.dir/build
 
-CMakeFiles/radix.dir/requires: CMakeFiles/radix.dir/emersonMain.cpp.o.requires
+CMakeFiles/radix.dir/requires: CMakeFiles/radix.dir/main.cpp.o.requires
 
 .PHONY : CMakeFiles/radix.dir/requires
 

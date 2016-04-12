@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/radix.dir/emersonMain.cpp.o"
+  "CMakeFiles/radix.dir/main.cpp.o"
   "radix.pdb"
   "radix"
 )

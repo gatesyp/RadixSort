@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/emerson/github/RadixSort/emersonMain.cpp" "/home/emerson/github/RadixSort/build/CMakeFiles/radix.dir/emersonMain.cpp.o"
+  "/home/emerson/github/RadixSort/main.cpp" "/home/emerson/github/RadixSort/build/CMakeFiles/radix.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

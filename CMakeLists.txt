@@ -22,7 +22,7 @@ set(CMAKE_CXX_FLAGS "-Wall -std=c++11 ")#${SAN_FLAGS}")
 # Declares the executable to be built from source files
 #
 # TODO: Add your files.
-add_executable(radix emersonMain.cpp)
+add_executable(radix main.cpp)
 
 
 # This creates a new target for the make program. After
