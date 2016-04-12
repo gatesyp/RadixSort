@@ -4,28 +4,13 @@
 
 using namespace std;
 
-void sort(int array[]);
+void emersonSort(int array[]);
 void countingSort(int array[], int digit);
 void print(int array[]); 
 
-int main() {
-	
-	int array[100];
-	int temp = 0;
-
-	for(int i = 0; i < 100; i++) {
-		temp = rand() % 100;
-		array[i] = temp;
-	}
-
-	print(array);
-	sort(array);
-	print(array);
-}
-
 //Function that implements Radix Sort. Sets initial values and calls
 //couting sort function that does most of the computational work
-void sort(int array[]) {
+void emersonSort(int array[]) {
 
 	//initialize values and find the maximum value of the ipnut array
 	//to know how many decimal places to sort
