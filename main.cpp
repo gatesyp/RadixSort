@@ -27,7 +27,7 @@ int main()
 	
 	//outer for loop to change the size for each iteration
 	int counter = 0;
-	for(int SIZE = 1000; SIZE < 10000000; SIZE *= 10) {
+	for(int SIZE = 1000; SIZE < 100000; SIZE *= 10) {
 		int array[SIZE];
 		
 		cout << SIZE << endl;
@@ -79,13 +79,13 @@ int main()
 
 		
 	
-	for(int i = 0; i < counter; i++) {
-		stats[i].report(cout);
-		stats2[i].report(cout);
-		stats3[i].report(cout);
-		
-		cout << endl;
-	}
+//	for(int i = 0; i < counter; i++) {
+//		stats[i].report(cout);
+//		stats2[i].report(cout);
+//		stats3[i].report(cout);
+//		
+//		cout << endl;
+//	}
 
 	cout << endl;
 
