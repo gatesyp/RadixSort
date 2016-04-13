@@ -15,10 +15,15 @@ timer timer1;
 
 int main()
 {
-	vector<recorder<timer> > stats(5);
+	vector<recorder<timer> > stats(10);
+	vector<recorder<timer> > stats2(10);
+	vector<recorder<timer> > stats3(10);
 
-	for(int i = 0; i < 4; ++i)
+	for(int i = 0; i < 4; ++i) {
 		stats[i].reset();
+		stats2[i].reset();
+		stats3[i].reset();
+	}
 	
 	//outer for loop to change the size for each iteration
 	int counter = 0;
@@ -27,52 +32,58 @@ int main()
 		
 		cout << SIZE << endl;
 		
-		//initalize array for emersonRadix
+		//EMERSON RADIX SORT
 		for(int i = 0; i< SIZE; i++) {
-			array[i] = rand() % 100;
+			array[i] = rand() % SIZE;
 		}
-		cout << "Printing" << endl;
 	
 		timer1.restart();
-		cout << "before sorting" << endl;
 		emersonSort(array, SIZE);
-		cout << "after sorting" <<endl;
 		timer1.stop();
 
 		stats[counter].record(timer1);
+		
+
+
+		//GEEK RADIX SORT
+		radixGeeks<int> geeks;
+		
+		// initalize the vector with random values
+		for(int i = 0; i < SIZE; i++)
+			geeks.add(rand() % SIZE);
+		
+		timer1.restart();
+		geeks.radixsort();
+		timer1.stop();
+
+		stats2[counter].record(timer1);
+
+
+
+		
+		bubbleySort<int> bubbles;
+
+		for(int i = 0; i < SIZE; i++)
+			bubbles.add(rand() % SIZE);
+
+		timer1.restart();
+		bubbles.bubblesort();
+		timer1.stop();
+
+		stats3[counter].record(timer1);
 
 		counter++;
-		cout << "After counter increase" << endl << endl;
 	}
 
 	cout << endl << endl << "MIDWAY BETWEEN FOR LOOPS" << endl << endl;
 
-
-//		stats[counter].record(timer1);
-//		
-//		listRadixSort();
-//		// create the object
-//		radixGeeks<int> geeks;
-//		// now perform all test logic
-//		for(int i = 100; i < 400; i++)
-//			geeks.add(i);
-//		for(int i = 10; i < 40; i++)
-//			geeks.add(i);
-//		// command to perform the sort
-//		geeks.radixsort();
-//		// optionally print the vector
-//		//	geeks.print();
-//		bubbleySort<int> bubbles;
-//		for(int i = 10; i < 20; i++)
-//			bubbles.add(i);
-//		for(int i = 0; i < 20; i++)
-//			bubbles.add(i);
-//		bubbles.print();
-//		bubbles.bubblesort();
-//		bubbles.print();
+		
 	
 	for(int i = 0; i < counter; i++) {
 		stats[i].report(cout);
+		stats2[i].report(cout);
+		stats3[i].report(cout);
+		
 		cout << endl;
 	}
 

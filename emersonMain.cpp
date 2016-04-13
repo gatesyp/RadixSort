@@ -11,7 +11,7 @@ int main() {
 		
 	//Fill up array with random numbers between 0 and 100 to sort. 
 	for(int i = 0; i < SIZE; i++) {
-		array[i]= rand() %100;
+		array[i]= rand() % SIZE;
 	}
 	
 	//Call radix sort function called emersonSort
